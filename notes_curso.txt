@@ -117,3 +117,5 @@ Estudio personal de hoy:
   de archivos y carpetas, tamaños, fechas de modificación, etc.
   (Aclaración: en Linux en vez de ser dir es ls).
   
+Cosas que aprendí:
+  Antes de hacer un push en git preciso al menos haber hecho antes un commit, sino dará error.
