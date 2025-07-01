@@ -1,0 +1,119 @@
+========= FUNVAL - FRONT-END =========
+Usaré este txt para tomar notas de las clases que tenga dentro del curso de FUNVAL - Front-end
+
+30/06
+Son 40 puntos máximo. Se precisa el 80% (32 puntos) del módulo para pasarlo.
+Se espera que en módulo 2 se consiga trabajo.
+
+Parte de las planillas de horários:
+  Propósito de FUNVAL: Que los alumnos alcancen la autosuficiécia por medio de un trabajo.
+  Antes de igresar al Zoom, vamos a tener material de información para leer antes de ingresar a la clase.
+  La evaluación del 80% se hace hasta la 5ta semana.
+  La elaboración del proyecto final tiene 60 puntos.
+  Link de exámen de inglés (para exonerar la matéria): https://www.efset.org/es/4-skill/
+    Si tenemos más de A2 quedamos exentos de clase de inglés.
+
+Jeremy Vargas:
+  Horas de servício:
+    ¿Por qué reportan horas de servício? Se basan en Mosíah 2:17. Se basan en bendecir a los otros
+    por medio de nuestros servicios.
+    ¿Cuáles servícios son aprovados por la organización?
+      Hice capturas con la presentación de lo que nos hablaron sobre eso. Algo para aclarar es que casi
+      todas las actividades cuentan con 5 horas de servicio.
+      Deben ser 20 horas de servício por módulo en total.
+      Fecha límite para entregar las horas de servício: 4ta semana.
+  
+  ¿Cómo entrar a la plataforma?
+    Link: estudiantefunval.org
+    Usuario: eg07145
+    Contraseña: Funval2025
+
+
+Note: después de 6 faltas injustificadas se nos remueve la beca total.
+
+Mahonri Monzón (Profe de instituto)
+
+Cada hora tendremos 15min de receso.
+
+
+======= Clase =======
+
+A la hora de crear software precisamos ver ciertos puntos:
+  - Extracción de Requerimientos.
+  - Plan de ataque (si el cliente quiere que el software tenga 3 usuarios, etc).
+  - Elaboración del Producto.
+
+  Un buen programador entiende cómo resolver y estructurar las soluciones a los problemas del cliente.
+
+  Elementos clave de todo Software:
+    - Base de datos.
+    - Back-end.
+    - Front-end.
+
+  Páginas web estáticas: páginas que tienen info. no tan interactiva. Ejemplo: Wikipedia. (Landing pages).
+    Normalmente, solo con el front-end basta para hacer este tipo de websites.
+
+  App dinámicas: ya requieren de los 3 elementos claves.
+
+  Base de Datos: espacio donde se almacena toda la info que vamos a manipular y con la cual vamos a 
+    trabajar.
+    Hay de dos tipos. Relacionales y no relacionales. Diferencias? Una tiene relación con las tablas y la
+    otra no.
+    Debemos aprender gestores de Bases de Datos. Aprender cuales son relacionales y no relacionales.
+
+  Back-end: trabaja con la información brindada por la base de datos. La trabaja, la organiza y la envía
+    al front-end.
+    No mandar toda la información en bruto. Debemos aprender a filtrar la información.
+    Ejemplo: envíame todos los usuarios de apellido Rodríguez.
+
+  Front-end: recibe la información ya trabajada, estructurada y organizada y la renderizaremos (o mostrar)
+    al cliente de forma agradable al cliente y de manera intuitiva. Fácil de manejar y manipular la
+    estructura.
+    Los lenguajes bases para ser Front-end son: HTML, CSS, JavaScript. Pero hoy en día el mercado está
+    utilizando lo que se llama Librerías y Frameworks. Qué son? Código que ha creado un desarrollador para
+    facilitar el desarrollo de Software.
+    En este curso veremos React, Tailwind, Next.js, etc. (Tal vez otros más que aún no han mencionado).
+
+  Cosas a tomar en cuenta:
+    A veces, cuando trabajamos con otras personas, podemos encontrar desarrolladores que no son tan
+    competentes en el back-end. Es bueno que el desarrollador front-end sepa de back-end cuando ese tipo
+    de cosas pasen, para saber cómo resolver esos problemas.
+
+  Ejemplo para entender mejor cómo funciona el desarrollo web:
+    Base de datos: Alacena (depósito).
+    Back-end: Cocina.
+    Front-end: Mesas del restaurante, áreas comunes, etc.
+
+
+Hoy vamos a dar de lleno a Git (control de versiones).
+  - Repositório: espacio físico o virtual donde se va a alojar TODO el proyecto de la empresa.
+    Cuando se nos pide "Clona el Repositório", se nos dice que hagamos una copia de proyecto en
+    nuestro computador. Esto no solo nos sirve para probar, crear y manipular las versiones, pero
+    también para tener un tipo de "respaldo" en nuestro ordenador también.
+
+  - Commit: se refiere al envío de la información o de la bitácora de nuestro proyecto. En un Commit
+    se envía quién hizo el Commit, cuándo y qué hizo dentro de ese Commit.
+
+  - Ramas/Branch: las diferentes versiones que se crean para arreglar un error. Dentro de estas se
+    encuentran ramas como Main, entre otras.
+
+  - Fusiones/Mearch: fusionar la última versión creada con la nueva versión hecha en la rama.
+
+  - Clon: clonar el repositório en nuestro ordenador sin necesidad de afectar el flujo de trabajo
+    de la empresa y de nuestros compañeros.
+
+  - Integridad: podemos seguir 
+
+Tumbar producción: Hacer un Commit con un error y que haga que el Software caiga.
+El profe quiere que veamos los proyectos ya como trabajo. Quiere que enviemos todo con Git.
+No va a aceptar (.zip).
+Tendremos la exigencia de un trabajo.
+Quieren que tengamos la experiencia de estar en un trabajo de desarrollador de Software.
+
+Estudio personal de hoy:
+   Estaba estudiando CMD para aprender a manipular Git mejor. Aprendí que en para tener una lista
+  completa de ficheros dentro de nuestro directório se utiliza el comando dir (abreviatura de "directory"). 
+   El comando (dir) se utiliza para listar el contenido de un directorio, mostrando información como nombres 
+  de archivos y carpetas, tamaños, fechas de modificación, etc.
+  (Aclaración: en Linux en vez de ser dir es ls).
+  
