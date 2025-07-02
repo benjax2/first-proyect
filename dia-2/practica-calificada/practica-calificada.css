@@ -132,6 +132,7 @@ main {
   margin-top: 3rem;
   display: flex;
   justify-content: space-between;
+  color: #e8c3e4;
   margin-bottom: 2rem;
 }
 
@@ -140,14 +141,13 @@ main {
 }
 
 .contactos a {
-  text-decoration: none;
-  color: #dedede;
+  color: rgb(142, 54, 169);
   font-size: 1.2rem;
 }
 
 .contactos a:hover {
-  color: #cd51be;
-  cursor: pointer;
+  color: #f0f0f0;
+  background-color: rgb(142, 54, 169);
 }
 
 .contactos h2 {
