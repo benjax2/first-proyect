@@ -46,20 +46,17 @@ header {
 /* Main */
 
 main {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   background-color: rgb(93, 93, 93);
   padding: 2rem;
-  max-width: 600px;
+  max-width: 700px;
   margin: 2rem auto;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
   color: rgb(236, 236, 236);
-}
-
-section {
-  margin: 1rem;
 }
 
 main img {
@@ -75,32 +72,58 @@ main img {
   justify-content: center;
 }
 
+.dia-2 {
+  margin-top: 4rem;
+}
+
+.dia-3 {
+  margin-top: 1rem;
+}
+
 section {
-  margin: 3rem auto;
-  background-color: rgb(35, 35, 35);
+  background-color: #1a1a1a;
   border-radius: 1rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  width: 100%;
+  padding: 1rem 0.5rem -3rem;
+  margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 500px;
+  color: white;
+  text-align: center;
+}
+
+section h2 {
+  margin: 2rem 0 3rem;
+  font-size: 1.5rem;
 }
 
 section ul {
-  list-style: none;
   display: flex;
-  margin: 0 auto;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+section li {
+  display: inline-block;
 }
 
 section a {
   text-decoration: none;
   color: white;
-  margin: 1rem;
   background-color: #333;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1.5rem;
   border-radius: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  font-size: 1rem;
 }
 
 section a:hover {
-  color: #8b97a4;
+  background-color: #444;
 }
