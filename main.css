@@ -8,9 +8,14 @@ body {
 /* Estilos del Header/Nav */
 
 header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
   background-color: #ffffff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 1rem 0;
+  font-family: 'Poppins', sans-serif;
 }
 
 .container-header {
@@ -70,13 +75,14 @@ main img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 3rem;
 }
 
 .dia-2 {
   margin-top: 4rem;
 }
 
-.dia-3 {
+.dias {
   margin-top: 1rem;
 }
 
