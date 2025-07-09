@@ -3,67 +3,157 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Benjamín Rodríguez - Portfolio</title>
+    <title>Luan Rodríguez | Portfolio</title>
     <link rel="stylesheet" href="./output.css" />
   </head>
-  <body>
-    <!-- HEADER oscuro, fijo -->
-    <header class="bg-gray-900 fixed top-0 left-0 w-full z-50 shadow">
-      <div
-        class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center"
+  <body class="bg-[#0D1117] text-white font-sans">
+    <!-- Header -->
+    <header
+      class="w-full flex justify-between items-center px-6 py-4 bg-[#0D1117] fixed top-0 z-50"
+    >
+      <div class="text-xl font-bold">Benja Rodríguez</div>
+      <nav class="space-x-6 hidden md:flex">
+        <a href="#" class="hover:text-[#E3FF6A]">ABOUT ME</a>
+        <a href="#skills" class="hover:text-[#E3FF6A]">SKILLS</a>
+        <a href="#projects" class="hover:text-[#E3FF6A]">PROJECTS</a>
+      </nav>
+      <a
+        href="#contact"
+        class="bg-[#E3FF6A] text-[#0D1117] px-4 py-2 rounded font-semibold"
+        >CONTACT</a
       >
-        <h1 class="text-2xl font-bold text-white">MiPortfolio</h1>
-        <nav>
-          <ul class="flex gap-6 text-gray-300 font-medium">
-            <li>
-              <a href="#inicio" class="hover:text-white transition">Sobre Mí</a>
-            </li>
-            <li>
-              <a href="#proyectos" class="hover:text-white transition"
-                >Proyectos</a
-              >
-            </li>
-            <li>
-              <a href="#contacto" class="hover:text-white transition"
-                >Contacto</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </div>
     </header>
 
-    <!-- HERO estilo similar al ejemplo -->
-    <section id="inicio" class="pt-32 pb-20 bg-gray-900 text-white">
-      <div
-        class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center gap-10"
+    <!-- Hero Section -->
+    <section
+      class="pt-32 pb-20 text-center bg-gradient-to-br from-[#1E293B] to-[#0D1117]"
+    >
+      <h1 class="text-3xl md:text-5xl font-bold">
+        I’m <span class="text-[#be36ac]">Benjamín Rodríguez</span><br />
+        Full Stack Developer
+      </h1>
+      <p class="mt-6 max-w-xl mx-auto text-[#8892B0]">
+        Client Review From Australia 🇦🇺 | My Expertise: Backend 85% - Frontend
+        95%
+      </p>
+      <img
+        src="../assets/images/benjamin-foto.jpg"
+        alt="Developer"
+        class="w-48 mx-auto mt-6 rounded-full shadow-lg"
+      />
+      <a
+        href="#projects"
+        class="mt-6 inline-block bg-[#E3FF6A] text-[#0D1117] font-bold px-6 py-2 rounded"
+        >MY PROJECTS</a
       >
-        <!-- Texto -->
-        <div class="flex-1 text-center md:text-left">
-          <h2 class="text-5xl md:text-6xl font-extrabold leading-tight mb-6">
-            Hola, soy <span class="text-[#e054d4]">Luan Rodríguez</span>
-          </h2>
-          <p class="text-gray-300 text-lg mb-8">
-            Desarrollador web creativo, construyendo experiencias digitales
-            modernas y elegantes.
-          </p>
-          <a
-            href="#proyectos"
-            class="inline-block border border-white hover:border-[#e054d4] text-white hover:text-gray-900 px-6 py-3 rounded-lg text-lg hover:bg-[#e054d4] transition"
-          >
-            Ver Proyectos
-          </a>
-        </div>
+    </section>
 
-        <!-- Imagen -->
-        <div class="flex-1">
-          <img
-            src="../assets/images/benjamin-foto.jpg"
-            alt="Imagen Hero"
-            class="w-full rounded-xl shadow-xl"
-          />
-        </div>
+    <!-- Who Am I -->
+    <section class="py-20 px-6 text-center">
+      <h2 class="text-3xl font-bold mb-4">WHO AM I ?</h2>
+      <p class="max-w-2xl mx-auto text-[#8892B0]">
+        I am a full-stack website developer specialized in NextJS. I also know
+        WordPress theme and plugin development with Elementor and WooCommerce. I
+        love programming and I play PC games and read story-type books in my
+        free time.
+      </p>
+      <a
+        href="#projects"
+        class="mt-6 inline-block bg-[#E3FF6A] text-[#0D1117] font-bold px-6 py-2 rounded"
+        >SHOW MY PROJECTS</a
+      >
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="py-20 px-6 text-center">
+      <h2 class="text-3xl font-bold mb-8">MY SKILLS</h2>
+      <div
+        class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6 justify-center mb-8"
+      >
+        <img src="./icons/html.svg" alt="HTML" class="w-12 mx-auto" />
+        <img src="./icons/css.svg" alt="CSS" class="w-12 mx-auto" />
+        <img src="./icons/js.svg" alt="JavaScript" class="w-12 mx-auto" />
+        <img src="./icons/react.svg" alt="React" class="w-12 mx-auto" />
+        <img src="./icons/nextjs.svg" alt="Next.js" class="w-12 mx-auto" />
+        <img src="./icons/nodejs.svg" alt="Node.js" class="w-12 mx-auto" />
+        <img src="./icons/tailwind.svg" alt="Tailwind" class="w-12 mx-auto" />
+        <img src="./icons/mongodb.svg" alt="MongoDB" class="w-12 mx-auto" />
       </div>
+      <p class="text-lg text-[#A4FF7A] font-semibold mb-4">
+        4 Years Experience Working
+      </p>
+      <a
+        href="#"
+        class="bg-[#E3FF6A] text-[#0D1117] px-4 py-2 rounded font-semibold"
+        >DOWNLOAD MY CV</a
+      >
+    </section>
+
+    <!-- Additional Skills -->
+    <section class="py-10 px-6 bg-[#1E293B] text-center">
+      <h3 class="text-xl text-[#E3FF6A] mb-4">ADDITIONAL SKILLS</h3>
+      <div class="flex flex-wrap justify-center gap-6">
+        <img src="./icons/bootstrap.svg" class="w-10" alt="Bootstrap" />
+        <img src="./icons/axios.svg" class="w-10" alt="Axios" />
+        <img src="./icons/materialui.svg" class="w-10" alt="Material UI" />
+        <img src="./icons/firebase.svg" class="w-10" alt="Firebase" />
+        <img src="./icons/wordpress.svg" class="w-10" alt="WordPress" />
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-20 px-6 text-center">
+      <h2 class="text-3xl font-bold mb-8">THE WORKS CLOSEST TO MY HEART</h2>
+      <div class="flex flex-wrap justify-center gap-6">
+        <img
+          src="./images/project1.jpg"
+          alt="Project 1"
+          class="w-64 rounded shadow"
+        />
+        <img
+          src="./images/project2.jpg"
+          alt="Project 2"
+          class="w-64 rounded shadow"
+        />
+        <img
+          src="./images/project3.jpg"
+          alt="Project 3"
+          class="w-64 rounded shadow"
+        />
+      </div>
+      <a
+        href="#projects"
+        class="mt-6 inline-block bg-[#E3FF6A] text-[#0D1117] font-bold px-6 py-2 rounded"
+        >SHOW MY PROJECTS</a
+      >
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="py-20 px-6 bg-[#1E293B] text-center">
+      <h2 class="text-3xl font-bold mb-8">LET’S HAVE A CHAT</h2>
+      <form class="max-w-xl mx-auto space-y-4">
+        <input
+          type="text"
+          placeholder="YOUR NAME"
+          class="w-full px-4 py-3 rounded bg-white text-black"
+        />
+        <input
+          type="email"
+          placeholder="EMAIL ADDRESS"
+          class="w-full px-4 py-3 rounded bg-white text-black"
+        />
+        <textarea
+          rows="4"
+          placeholder="CHAT HERE"
+          class="w-full px-4 py-3 rounded bg-white text-black"
+        ></textarea>
+        <button
+          type="submit"
+          class="w-full bg-[#E3FF6A] text-[#0D1117] py-3 font-bold rounded"
+        >
+          SUBMIT HERE
+        </button>
+      </form>
     </section>
   </body>
 </html>
