@@ -1,159 +1,430 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Luan Rodríguez | Portfolio</title>
+    <title>Benjamín Rodríguez | Front-end Developer Portfolio</title>
     <link rel="stylesheet" href="./output.css" />
   </head>
-  <body class="bg-[#0D1117] text-white font-sans">
-    <!-- Header -->
+  <body class="bg-[#0D1117] font-sans text-white">
     <header
-      class="w-full flex justify-between items-center px-6 py-4 bg-[#0D1117] fixed top-0 z-50"
+      class="fixed top-0 z-50 flex w-full items-center justify-between bg-[#0D1117] px-6 py-4 shadow-md"
     >
-      <div class="text-xl font-bold">Benja Rodríguez</div>
-      <nav class="space-x-6 hidden md:flex">
-        <a href="#" class="hover:text-[#E3FF6A]">ABOUT ME</a>
-        <a href="#skills" class="hover:text-[#E3FF6A]">SKILLS</a>
-        <a href="#projects" class="hover:text-[#E3FF6A]">PROJECTS</a>
+      <div class="text-xl font-bold text-white">Benjamín Rodríguez</div>
+      <nav class="hidden space-x-6 md:flex">
+        <a href="#about" class="text-white transition-colors duration-300 hover:text-[#E3FF6A]"
+          >ABOUT ME</a
+        >
+        <a href="#skills" class="text-white transition-colors duration-300 hover:text-[#E3FF6A]"
+          >SKILLS</a
+        >
+        <a href="#projects" class="text-white transition-colors duration-300 hover:text-[#E3FF6A]"
+          >PROJECTS</a
+        >
       </nav>
       <a
         href="#contact"
-        class="bg-[#E3FF6A] text-[#0D1117] px-4 py-2 rounded font-semibold"
+        class="rounded bg-[#E3FF6A] px-4 py-2 font-semibold text-[#0D1117] transition-all duration-300 ease-in-out hover:bg-[#cbe35e] hover:shadow-[0_0_25px_rgba(227,255,106,0.6)]"
         >CONTACT</a
       >
+
+      <button id="mobile-menu-button" class="text-white focus:outline-none md:hidden">
+        <svg
+          class="h-6 w-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7"
+          ></path>
+        </svg>
+      </button>
     </header>
 
-    <!-- Hero Section -->
-    <section
-      class="pt-32 pb-20 text-center bg-gradient-to-br from-[#1E293B] to-[#0D1117]"
+    <div
+      id="mobile-menu"
+      class="fixed top-16 left-0 z-40 hidden w-full bg-[#0D1117] py-4 text-center shadow-lg md:hidden"
     >
-      <h1 class="text-3xl md:text-5xl font-bold">
-        I’m <span class="text-[#be36ac]">Benjamín Rodríguez</span><br />
-        Full Stack Developer
+      <nav class="flex flex-col space-y-4">
+        <a
+          href="#about"
+          class="block py-2 text-white transition-colors duration-300 hover:text-[#E3FF6A]"
+          >ABOUT ME</a
+        >
+        <a
+          href="#skills"
+          class="block py-2 text-white transition-colors duration-300 hover:text-[#E3FF6A]"
+          >SKILLS</a
+        >
+        <a
+          href="#projects"
+          class="block py-2 text-white transition-colors duration-300 hover:text-[#E3FF6A]"
+          >PROJECTS</a
+        >
+        <a
+          href="#contact"
+          class="block py-2 text-white transition-colors duration-300 hover:text-[#E3FF6A]"
+          >CONTACT</a
+        >
+      </nav>
+    </div>
+
+    <section class="bg-gradient-to-br from-[#1E293B] to-[#0D1117] pt-32 pb-20 text-center">
+      <h1 class="text-3xl font-bold md:text-5xl">
+        I'm <span class="text-[#be36ac]">Benjamín Rodríguez</span><br />
+        Front-end Developer
       </h1>
-      <p class="mt-6 max-w-xl mx-auto text-[#8892B0]">
-        Client Review From Australia 🇦🇺 | My Expertise: Backend 85% - Frontend
-        95%
-      </p>
       <img
         src="../assets/images/benjamin-foto.jpg"
-        alt="Developer"
-        class="w-48 mx-auto mt-6 rounded-full shadow-lg"
+        alt="Benjamín Rodríguez Profile Photo"
+        class="mx-auto mt-12 h-48 w-48 rounded-full border-4 border-[#E3FF6A] object-cover shadow-xl md:h-64 md:w-64"
       />
       <a
         href="#projects"
-        class="mt-6 inline-block bg-[#E3FF6A] text-[#0D1117] font-bold px-6 py-2 rounded"
+        class="mt-10 inline-block transform rounded bg-[#E3FF6A] px-6 py-2 font-bold text-[#0D1117] transition-all duration-300 ease-in-out hover:scale-105 hover:bg-[#cbe35e] hover:shadow-[0_0_25px_rgba(227,255,106,0.6)]"
         >MY PROJECTS</a
       >
     </section>
 
-    <!-- Who Am I -->
-    <section class="py-20 px-6 text-center">
-      <h2 class="text-3xl font-bold mb-4">WHO AM I ?</h2>
-      <p class="max-w-2xl mx-auto text-[#8892B0]">
-        I am a full-stack website developer specialized in NextJS. I also know
-        WordPress theme and plugin development with Elementor and WooCommerce. I
-        love programming and I play PC games and read story-type books in my
-        free time.
+    <section id="about" class="px-6 py-20 text-center">
+      <h2 class="mb-6 text-4xl font-bold">WHO AM I?</h2>
+      <p class="mx-auto max-w-4xl text-lg leading-relaxed text-[#8892B0] md:text-xl">
+        I am a front-end web developer passionate about creating intuitive and visually appealing
+        user experiences. I specialize in HTML, CSS, Tailwind CSS, and JavaScript. Additionally, I
+        have basic knowledge in back-end development, working with technologies like PHP and MySQL,
+        skills I acquired during my training at FUNVAL.
+        <br /><br />
+        My curiosity goes beyond code. In my free time, I enjoy exploring the world of music, where
+        I have been developing production skills using Ableton Live and FL Studio. I am also
+        passionate about video editing and graphic design, handling tools like Adobe Premiere Pro
+        and Photoshop. I love diving into the world of video games and reading.
       </p>
       <a
         href="#projects"
-        class="mt-6 inline-block bg-[#E3FF6A] text-[#0D1117] font-bold px-6 py-2 rounded"
-        >SHOW MY PROJECTS</a
+        class="mt-10 inline-block transform rounded bg-[#E3FF6A] px-6 py-2 font-bold text-[#0D1117] transition-all duration-300 ease-in-out hover:scale-105 hover:bg-[#cbe35e] hover:shadow-[0_0_25px_rgba(227,255,106,0.6)]"
+        >VIEW MY PROJECTS</a
       >
     </section>
 
-    <!-- Skills -->
-    <section id="skills" class="py-20 px-6 text-center">
-      <h2 class="text-3xl font-bold mb-8">MY SKILLS</h2>
+    <section id="skills" class="bg-[#1E293B] px-6 py-20 text-center">
+      <h2 class="mb-12 text-3xl font-bold">MY SKILLS</h2>
       <div
-        class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6 justify-center mb-8"
+        class="mx-auto mb-12 grid max-w-6xl grid-cols-3 gap-8 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6"
       >
-        <img src="./icons/html.svg" alt="HTML" class="w-12 mx-auto" />
-        <img src="./icons/css.svg" alt="CSS" class="w-12 mx-auto" />
-        <img src="./icons/js.svg" alt="JavaScript" class="w-12 mx-auto" />
-        <img src="./icons/react.svg" alt="React" class="w-12 mx-auto" />
-        <img src="./icons/nextjs.svg" alt="Next.js" class="w-12 mx-auto" />
-        <img src="./icons/nodejs.svg" alt="Node.js" class="w-12 mx-auto" />
-        <img src="./icons/tailwind.svg" alt="Tailwind" class="w-12 mx-auto" />
-        <img src="./icons/mongodb.svg" alt="MongoDB" class="w-12 mx-auto" />
+        <div
+          class="flex flex-col items-center rounded-lg bg-[#0D1117] p-4 shadow-md transition-transform duration-300 hover:scale-105"
+        >
+          <img
+            src="https://img.icons8.com/color/100/000000/html-5--v1.png"
+            alt="HTML"
+            class="mx-auto mb-2 h-16 w-16"
+          />
+          <p class="text-lg font-medium">HTML</p>
+        </div>
+        <div
+          class="flex flex-col items-center rounded-lg bg-[#0D1117] p-4 shadow-md transition-transform duration-300 hover:scale-105"
+        >
+          <img
+            src="https://img.icons8.com/color/100/000000/css3.png"
+            alt="CSS"
+            class="mx-auto mb-2 h-16 w-16"
+          />
+          <p class="text-lg font-medium">CSS</p>
+        </div>
+        <div
+          class="flex flex-col items-center rounded-lg bg-[#0D1117] p-4 shadow-md transition-transform duration-300 hover:scale-105"
+        >
+          <img
+            src="https://img.icons8.com/color/100/000000/javascript--v1.png"
+            alt="JavaScript"
+            class="mx-auto mb-2 h-16 w-16"
+          />
+          <p class="text-lg font-medium">JavaScript</p>
+        </div>
+        <div
+          class="flex flex-col items-center rounded-lg bg-[#0D1117] p-4 shadow-md transition-transform duration-300 hover:scale-105"
+        >
+          <img
+            src="https://img.icons8.com/officel/100/000000/react.png"
+            alt="React"
+            class="mx-auto mb-2 h-16 w-16"
+          />
+          <p class="text-lg font-medium">React</p>
+        </div>
+        <div
+          class="flex flex-col items-center rounded-lg bg-[#0D1117] p-4 shadow-md transition-transform duration-300 hover:scale-105"
+        >
+          <img
+            src="https://img.icons8.com/color/100/000000/tailwind_css.png"
+            alt="Tailwind CSS"
+            class="mx-auto mb-2 h-16 w-16"
+          />
+          <p class="text-lg font-medium">Tailwind CSS</p>
+        </div>
+        <div
+          class="flex flex-col items-center rounded-lg bg-[#0D1117] p-4 shadow-md transition-transform duration-300 hover:scale-105"
+        >
+          <img
+            src="https://img.icons8.com/color/100/000000/python.png"
+            alt="Python"
+            class="mx-auto mb-2 h-16 w-16"
+          />
+          <p class="text-lg font-medium">Python</p>
+        </div>
+        <div
+          class="flex flex-col items-center rounded-lg bg-[#0D1117] p-4 shadow-md transition-transform duration-300 hover:scale-105"
+        >
+          <img
+            src="https://img.icons8.com/color/100/000000/java-coffee-cup-logo--v1.png"
+            alt="Java"
+            class="mx-auto mb-2 h-16 w-16"
+          />
+          <p class="text-lg font-medium">Java</p>
+        </div>
+        <div
+          class="flex flex-col items-center rounded-lg bg-[#0D1117] p-4 shadow-md transition-transform duration-300 hover:scale-105"
+        >
+          <img
+            src="https://img.icons8.com/?size=100&id=plPz67QUdeWA&format=png&color=000000"
+            alt="PHP"
+            class="mx-auto mb-2 h-16 w-16"
+          />
+          <p class="text-lg font-medium">PHP</p>
+        </div>
+        <div
+          class="flex flex-col items-center rounded-lg bg-[#0D1117] p-4 shadow-md transition-transform duration-300 hover:scale-105"
+        >
+          <img
+            src="https://img.icons8.com/?size=100&id=J6KcaRLsTgpZ&format=png&color=000000"
+            alt="SQL"
+            class="mx-auto mb-2 h-16 w-16"
+          />
+          <p class="text-lg font-medium">SQL</p>
+        </div>
       </div>
-      <p class="text-lg text-[#A4FF7A] font-semibold mb-4">
-        4 Years Experience Working
+      <p class="mb-6 text-xl font-semibold text-[#A4FF7A]">
+        Ready for my first professional opportunity!
       </p>
       <a
-        href="#"
-        class="bg-[#E3FF6A] text-[#0D1117] px-4 py-2 rounded font-semibold"
+        href="./assets/documents/Luan Rodríguez CV.pdf"
+        download="Luan Rodríguez CV.pdf"
+        class="transform rounded bg-[#E3FF6A] px-6 py-3 font-bold text-[#0D1117] transition-all duration-300 ease-in-out hover:scale-105 hover:bg-[#cbe35e] hover:shadow-[0_0_25px_rgba(227,255,106,0.6)]"
         >DOWNLOAD MY CV</a
       >
     </section>
 
-    <!-- Additional Skills -->
-    <section class="py-10 px-6 bg-[#1E293B] text-center">
-      <h3 class="text-xl text-[#E3FF6A] mb-4">ADDITIONAL SKILLS</h3>
-      <div class="flex flex-wrap justify-center gap-6">
-        <img src="./icons/bootstrap.svg" class="w-10" alt="Bootstrap" />
-        <img src="./icons/axios.svg" class="w-10" alt="Axios" />
-        <img src="./icons/materialui.svg" class="w-10" alt="Material UI" />
-        <img src="./icons/firebase.svg" class="w-10" alt="Firebase" />
-        <img src="./icons/wordpress.svg" class="w-10" alt="WordPress" />
+    <section class="bg-[#0D1117] px-6 py-10 text-center">
+      <h3 class="mb-8 text-2xl font-bold text-[#E3FF6A]">ADDITIONAL SKILLS</h3>
+      <div class="mx-auto flex max-w-4xl flex-wrap justify-center gap-x-12 gap-y-8">
+        <div
+          class="flex flex-col items-center rounded-lg bg-[#1E293B] p-4 shadow-md transition-transform duration-300 hover:scale-105"
+        >
+          <img
+            src="https://img.icons8.com/color/100/000000/adobe-premiere-pro--v1.png"
+            class="mb-2 h-16 w-16"
+            alt="Adobe Premiere Pro"
+          />
+          <p class="text-lg font-medium">Adobe Premiere Pro</p>
+        </div>
+        <div
+          class="flex flex-col items-center rounded-lg bg-[#1E293B] p-4 shadow-md transition-transform duration-300 hover:scale-105"
+        >
+          <img
+            src="https://img.icons8.com/color/100/000000/adobe-photoshop--v1.png"
+            class="mb-2 h-16 w-16"
+            alt="Adobe Photoshop"
+          />
+          <p class="text-lg font-medium">Adobe Photoshop</p>
+        </div>
+        <div
+          class="flex flex-col items-center rounded-lg bg-[#1E293B] p-4 shadow-md transition-transform duration-300 hover:scale-105"
+        >
+          <img
+            src="https://img.icons8.com/?size=100&id=36327&format=png&color=000000"
+            class="mb-2 h-16 w-16"
+            alt="Ableton Live"
+          />
+          <p class="text-lg font-medium">Ableton Live</p>
+        </div>
+        <div
+          class="items-cente flex flex-col rounded-lg bg-[#1E293B] p-4 shadow-md transition-transform duration-300 hover:scale-105"
+        >
+          <img
+            src="https://img.icons8.com/?size=100&id=33042&format=png&color=000000"
+            class="mb-2 h-16 w-16"
+            alt="FL Studio"
+          />
+          <p class="text-lg font-medium">FL Studio</p>
+        </div>
       </div>
     </section>
 
-    <!-- Projects -->
-    <section id="projects" class="py-20 px-6 text-center">
-      <h2 class="text-3xl font-bold mb-8">THE WORKS CLOSEST TO MY HEART</h2>
-      <div class="flex flex-wrap justify-center gap-6">
-        <img
-          src="./images/project1.jpg"
-          alt="Project 1"
-          class="w-64 rounded shadow"
-        />
-        <img
-          src="./images/project2.jpg"
-          alt="Project 2"
-          class="w-64 rounded shadow"
-        />
-        <img
-          src="./images/project3.jpg"
-          alt="Project 3"
-          class="w-64 rounded shadow"
-        />
+    <section id="projects" class="bg-[#1E293B] px-6 py-20 text-center">
+      <h2 class="mb-12 text-3xl font-bold">THE PROJECTS CLOSEST TO MY HEART</h2>
+      <div class="mx-auto grid max-w-6xl grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div
+          class="flex transform flex-col overflow-hidden rounded-lg bg-[#0D1117] p-6 shadow-xl transition-transform duration-300 hover:scale-105"
+        >
+          <img
+            src="./img/proyecto-1.png"
+            alt="Mini E-commerce with Stripe"
+            class="mb-4 h-48 w-full rounded-md border border-[#1E293B] object-cover"
+          />
+          <h3 class="mb-3 text-2xl font-semibold text-[#E3FF6A]">BookStore WebSite</h3>
+          <p class="mb-4 flex-grow text-base text-[#8892B0]">
+            A small project promoting a bookstore. It demonstrates my ability to handle animations
+            like sliders, dark-mode, and front-end design skills.
+          </p>
+          <div class="mt-auto flex justify-center space-x-6">
+            <a
+              href="https://github.com/benjax2/first-proyect/tree/main/dia-10"
+              target="_blank"
+              class="font-semibold text-[#E3FF6A] hover:underline"
+              >View Code (GitHub)</a
+            >
+            <a
+              href="https://benjax2.github.io/first-proyect/dia-10/dia-10.html"
+              target="_blank"
+              class="font-semibold text-[#E3FF6A] hover:underline"
+              >View Demo (Live)</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="flex transform flex-col overflow-hidden rounded-lg bg-[#0D1117] p-6 shadow-xl transition-transform duration-300 hover:scale-105"
+        >
+          <img
+            src="./img/proyecto-2.png"
+            alt="Modern Landing Page"
+            class="mb-4 h-48 w-full rounded-md border border-[#1E293B] object-cover"
+          />
+          <h3 class="mb-3 text-2xl font-semibold text-[#E3FF6A]">
+            Landing Page - Home Vet Service
+          </h3>
+          <p class="mb-4 flex-grow text-base text-[#8892B0]">
+            A modern and responsive landing page for a home vet service. It uses HTML, Tailwind CSS,
+            and JavaScript for a fluid and attractive user experience. Includes subtle animations
+            and a clean design.
+          </p>
+          <div class="mt-auto flex justify-center space-x-6">
+            <a
+              href="https://github.com/benjax2/first-proyect/tree/main/dia-4/tarde-%26-practica-calificada"
+              target="_blank"
+              class="font-semibold text-[#E3FF6A] hover:underline"
+              >View Code (GitHub)</a
+            >
+            <a
+              href="https://benjax2.github.io/first-proyect/dia-4/tarde-&-practica-calificada/dia-4-tarde-and-practica-calificada.html"
+              target="_blank"
+              class="font-semibold text-[#E3FF6A] hover:underline"
+              >View Demo (Live)</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="flex transform flex-col overflow-hidden rounded-lg bg-[#0D1117] p-6 shadow-xl transition-transform duration-300 hover:scale-105"
+        >
+          <img
+            src="./img/proyecto-3.png"
+            alt="Task Application (TODO App)"
+            class="mb-4 h-48 w-full rounded-md border border-[#1E293B] object-cover"
+          />
+          <h3 class="mb-3 text-2xl font-semibold text-[#E3FF6A]">Huellitas - Animal Shelter</h3>
+          <p class="mb-4 flex-grow text-base text-[#8892B0]">
+            A website that allows users to contact the store, enabling pet adoptions. It uses HTML,
+            Tailwind, and JavaScript for an interactive and dynamic experience.
+          </p>
+          <div class="mt-auto flex justify-center space-x-6">
+            <a
+              href="https://github.com/benjax2/first-proyect/tree/main/dia-9/dia-9-ejercicio"
+              target="_blank"
+              class="font-semibold text-[#E3FF6A] hover:underline"
+              >View Code (GitHub)</a
+            >
+            <a
+              href="https://benjax2.github.io/first-proyect/dia-9/dia-9-ejercicio/dia-9-ejercicio.html"
+              target="_blank"
+              class="font-semibold text-[#E3FF6A] hover:underline"
+              >View Demo (Live)</a
+            >
+          </div>
+        </div>
       </div>
-      <a
-        href="#projects"
-        class="mt-6 inline-block bg-[#E3FF6A] text-[#0D1117] font-bold px-6 py-2 rounded"
-        >SHOW MY PROJECTS</a
-      >
     </section>
 
-    <!-- Contact Form -->
-    <section id="contact" class="py-20 px-6 bg-[#1E293B] text-center">
-      <h2 class="text-3xl font-bold mb-8">LET’S HAVE A CHAT</h2>
-      <form class="max-w-xl mx-auto space-y-4">
+    <section id="contact" class="bg-[#0D1117] px-6 py-20 text-center">
+      <h2 class="mb-12 text-3xl font-bold">LET'S TALK A BIT</h2>
+      <form class="mx-auto max-w-xl space-y-6" action="#" method="POST">
         <input
           type="text"
           placeholder="YOUR NAME"
-          class="w-full px-4 py-3 rounded bg-white text-black"
+          name="name"
+          required
+          class="w-full rounded-lg bg-[#1E293B] px-5 py-3 text-white placeholder-[#8892B0] focus:ring-2 focus:ring-[#E3FF6A] focus:outline-none"
         />
         <input
           type="email"
           placeholder="EMAIL ADDRESS"
-          class="w-full px-4 py-3 rounded bg-white text-black"
+          name="email"
+          required
+          class="w-full rounded-lg bg-[#1E293B] px-5 py-3 text-white placeholder-[#8892B0] focus:ring-2 focus:ring-[#E3FF6A] focus:outline-none"
         />
         <textarea
-          rows="4"
-          placeholder="CHAT HERE"
-          class="w-full px-4 py-3 rounded bg-white text-black"
+          rows="6"
+          placeholder="WRITE YOUR MESSAGE HERE..."
+          name="message"
+          required
+          class="w-full rounded-lg bg-[#1E293B] px-5 py-3 text-white placeholder-[#8892B0] focus:ring-2 focus:ring-[#E3FF6A] focus:outline-none"
         ></textarea>
         <button
           type="submit"
-          class="w-full bg-[#E3FF6A] text-[#0D1117] py-3 font-bold rounded"
+          class="w-full rounded-lg bg-[#E3FF6A] py-3 text-lg font-bold text-[#0D1117] transition-all duration-300 ease-in-out hover:bg-[#cbe35e] hover:shadow-[0_0_25px_rgba(227,255,106,0.6)]"
         >
-          SUBMIT HERE
+          SEND MESSAGE
         </button>
       </form>
+      <div class="mt-12 text-lg text-[#8892B0]">
+        You can also find me on:
+        <div class="mt-4 flex justify-center space-x-6">
+          <a
+            href="https://github.com/benjax2"
+            target="_blank"
+            class="text-white transition-colors duration-300 hover:text-[#E3FF6A]"
+          >
+            <img
+              src="https://img.icons8.com/ios-filled/50/ffffff/github.png"
+              alt="GitHub"
+              class="mx-auto h-8 w-8"
+            />
+            GitHub
+          </a>
+          <a
+            href="https://www.linkedin.com/in/luan-rodr%C3%ADguez-3a075930a/"
+            target="_blank"
+            class="text-white transition-colors duration-300 hover:text-[#E3FF6A]"
+          >
+            <img
+              src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png"
+              alt="LinkedIn"
+              class="mx-auto h-8 w-8"
+            />
+            LinkedIn
+          </a>
+        </div>
+      </div>
     </section>
+
+    <footer class="bg-[#0D1117] py-6 text-center text-sm text-[#8892B0]">
+      <p>&copy; 2025 Benjamín Rodríguez. All rights reserved.</p>
+    </footer>
+
+    <script src="./script.js"></script>
   </body>
 </html>
