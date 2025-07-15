@@ -1,0 +1,30 @@
+* {
+  font-size: 1.1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #222;
+  color: #ddd;
+  margin: 0;
+  padding: 20px;
+}
+
+strong,
+h1,
+h2,
+h3 {
+  color: white;
+}
+
+.link {
+  color: #00bcd4;
+  text-decoration: none;
+}
+
+.link a {
+  color: white;
+}
+.link a:hover {
+  color: rgb(32, 74, 152);
+}

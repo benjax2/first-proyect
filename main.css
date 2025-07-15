@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #333;
   color: white;
 }
@@ -15,7 +15,7 @@ header {
   background-color: #ffffff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 1rem 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .container-header {
@@ -132,4 +132,8 @@ section a {
 
 section a:hover {
   background-color: #444;
+}
+
+.dia-12 {
+  max-width: 100%;
 }
