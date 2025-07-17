@@ -137,3 +137,8 @@ section a:hover {
 .dia-12 {
   max-width: 100%;
 }
+
+.dias h3 {
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
