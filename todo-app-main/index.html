@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body
+    class="min-h-screen bg-gray-100 font-['Josefin_Sans'] text-gray-900 dark:bg-[#181925] dark:text-gray-100"
+  >
+    <header class="h-52 bg-cover bg-center" id="header"></header>
+
+    <main class="relative z-10 mx-auto -mt-32 max-w-xl px-4">
+      <div class="mb-6 flex items-center justify-between">
+        <h1 class="text-3xl font-bold tracking-widest text-white uppercase">Todo</h1>
+        <button id="toggle-theme" aria-label="Toggle Theme">
+          <img id="theme-icon" src="./images/icon-sun.svg" alt="Toggle Icon" class="h-6 w-6" />
+        </button>
+      </div>
+
+      <!-- Input para nuevas tareas -->
+      <div class="mb-4 flex items-center gap-4 rounded bg-white px-4 py-3 shadow dark:bg-[#24273d]">
+        <input
+          type="text"
+          id="new-task"
+          placeholder="Create a new todo..."
+          class="w-full bg-transparent text-sm placeholder-gray-400 focus:outline-none dark:placeholder-gray-500"
+        />
+      </div>
+
+      <!-- Lista de tareas -->
+      <ul
+        id="task-list"
+        class="divide-y divide-gray-200 rounded-t bg-white shadow dark:divide-gray-700 dark:bg-[#24273d]"
+      ></ul>
+
+      <!-- Filtros y contador -->
+      <div
+        class="flex items-center justify-between rounded-b bg-white px-4 py-3 text-sm text-gray-500 shadow dark:bg-gray-800 dark:text-gray-400"
+      >
+        <span id="items-left">0 items left</span>
+        <div class="hidden gap-3 sm:flex">
+          <button class="filter-btn hover:text-gray-900 dark:hover:text-white" data-filter="all">
+            All
+          </button>
+          <button class="filter-btn hover:text-gray-900 dark:hover:text-white" data-filter="active">
+            Active
+          </button>
+          <button
+            class="filter-btn hover:text-gray-900 dark:hover:text-white"
+            data-filter="completed"
+          >
+            Completed
+          </button>
+        </div>
+        <button id="clear-completed" class="hover:text-gray-800 dark:hover:text-white">
+          Clear Completed
+        </button>
+      </div>
+
+      <!-- Filtros móviles -->
+      <div
+        class="mt-4 flex justify-center gap-4 rounded bg-white py-3 text-sm text-gray-500 shadow sm:hidden dark:bg-gray-800 dark:text-gray-400"
+      >
+        <button class="filter-btn hover:text-blue-500" data-filter="all">All</button>
+        <button class="filter-btn hover:text-blue-500" data-filter="active">Active</button>
+        <button class="filter-btn hover:text-blue-500" data-filter="completed">Completed</button>
+      </div>
+
+      <p class="mt-8 text-center text-sm text-gray-400">Drag and drop to reorder list</p>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
