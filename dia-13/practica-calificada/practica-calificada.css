@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  margin: 0;
+}
+
+.container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 90%;
+  max-width: 500px;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.balance-display {
+  background-color: #e9f7ef;
+  border: 1px solid #d4edda;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+.balance-display h2 {
+  color: #28a745;
+  margin: 0;
+  font-size: 1.8em;
+}
+
+.account-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+input[type="number"] {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #fff;
+  width: 100%;
+}
+
+#depositBtn {
+  background-color: #007bff;
+}
+
+#depositBtn:hover {
+  background-color: #0056b3;
+}
+
+#withdrawBtn {
+  background-color: #dc3545;
+}
+
+#withdrawBtn:hover {
+  background-color: #c82333;
+}
+
+#checkBalanceBtn {
+  background-color: #6c757d;
+}
+
+#checkBalanceBtn:hover {
+  background-color: #5a6268;
+}
+
+.messages {
+  min-height: 30px;
+}
+
+#message {
+  color: #333;
+  font-weight: bold;
+}
