@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda Online</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body class="flex min-h-screen flex-col items-center justify-start bg-gray-100 p-6 text-gray-900">
+    <h1 class="mb-6 text-3xl font-bold">🛒 Tienda Online</h1>
+
+    <div class="w-full max-w-3xl space-y-6">
+      <section id="productos" class="rounded-xl bg-white p-4 shadow">
+        <h2 class="mb-2 text-xl font-semibold">Productos disponibles</h2>
+        <ul id="lista-productos" class="list-disc pl-5 text-gray-700"></ul>
+      </section>
+
+      <section class="rounded-xl bg-white p-4 shadow">
+        <h2 class="mb-2 text-xl font-semibold">Buscar producto</h2>
+        <input
+          id="buscador"
+          type="text"
+          placeholder="Buscar producto..."
+          class="mb-2 w-full rounded border p-2"
+        />
+        <button
+          onclick="buscarProducto()"
+          class="rounded bg-blue-500 px-4 py-2 text-white hover:bg-blue-600"
+        >
+          Verificar disponibilidad
+        </button>
+        <p id="resultado-busqueda" class="mt-2 font-medium"></p>
+      </section>
+
+      <section id="descuentos" class="rounded-xl bg-white p-4 shadow">
+        <h2 class="mb-2 text-xl font-semibold">Productos con descuento</h2>
+        <ul id="lista-descuentos" class="list-disc pl-5 text-gray-700"></ul>
+      </section>
+
+      <section class="grid grid-cols-2 gap-4">
+        <div class="rounded-xl bg-white p-4 shadow">
+          <h2 class="mb-2 text-xl font-semibold">Menores de $100</h2>
+          <ul id="productos-baratos" class="list-disc pl-5 text-gray-700"></ul>
+        </div>
+
+        <div class="rounded-xl bg-white p-4 shadow">
+          <h2 class="mb-2 text-xl font-semibold">Primeros 2 productos</h2>
+          <ul id="primeros-productos" class="list-disc pl-5 text-gray-700"></ul>
+        </div>
+      </section>
+
+      <section class="rounded-xl bg-white p-4 shadow">
+        <h2 class="mb-2 text-xl font-semibold">Ordenados por precio</h2>
+        <ul id="productos-ordenados" class="list-disc pl-5 text-gray-700"></ul>
+      </section>
+
+      <section class="rounded-xl bg-white p-4 shadow">
+        <h2 class="mb-2 text-xl font-semibold">Productos en orden inverso</h2>
+        <ul id="productos-inversos" class="list-disc pl-5 text-gray-700"></ul>
+      </section>
+    </div>
+
+    <script src="./practica-calificada.js"></script>
+  </body>
+</html>
