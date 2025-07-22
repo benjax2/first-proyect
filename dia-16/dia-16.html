@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Día 16</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body class="bg-white text-black transition duration-300">
+    <!-- <div class="flex items-center justify-center pt-7">
+      <label id="btn" class="inline-flex cursor-pointer items-center">
+        <input id="themeToggle" type="checkbox" value="" class="peer sr-only" />
+        <div
+          class="peer relative h-6 w-11 rounded-full bg-yellow-300 after:absolute after:start-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:after:translate-x-full peer-checked:after:border-white rtl:peer-checked:after:-translate-x-full dark:border-gray-600 dark:bg-gray-700 dark:peer-checked:bg-gray-700"
+        ></div>
+      </label>
+    </div>
+
+    <div class="flex items-center justify-center pt-20">
+      <img
+        id="fionaImg"
+        src="./img/fiona-humana.jpg"
+        alt="Fiona humana"
+        class="w-64 rounded shadow-lg transition duration-300"
+      />
+    </div> -->
+
+    <section class="flex flex-col items-center justify-center gap-4 pt-20">
+      <form id="form" action="#" class="flex flex-col items-center justify-center gap-4 p-4">
+        <label for="name">Nombre:</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="rounded-2xl border-1 text-center"
+          required
+        />
+        <label for="lastName">Apellido paterno:</label>
+        <input
+          type="text"
+          name="lastName"
+          id="lastName"
+          class="rounded-2xl border-1 text-center"
+          required
+        />
+        <label for="age">Edad:</label>
+        <input type="text" name="age" id="age" class="rounded-2xl border-1 text-center" required />
+        <label for="nationality">Nacionalidad:</label>
+        <input
+          type="text"
+          name="nationality"
+          id="nationality"
+          class="rounded-2xl border-1 text-center"
+          required
+        />
+
+        <button
+          id="submit"
+          type="submit"
+          class="cursor-pointer rounded-2xl border-1 px-7 py-3 hover:bg-amber-100"
+        >
+          Enviar
+        </button>
+      </form>
+    </section>
+
+    <script src="./dia-16.js"></script>
+  </body>
+</html>
