@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Día 16 - Tarde</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body class="relative bg-gray-100">
+    <!-- BOTÓN AGREGAR ESTUDIANTES -->
+    <div class="absolute top-30 right-60 flex items-center justify-center">
+      <button
+        id="agregarEstudiante"
+        type="submit"
+        class="rounded-lg bg-blue-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-blue-800"
+      >
+        Agregar Estudiante
+      </button>
+    </div>
+
+    <!-- FORMULARIO | MODAL -->
+    <div
+      id="formularioEstudiante"
+      class="bg-opacity-50 fixed inset-0 z-50 hidden items-center justify-center bg-gray-700"
+    >
+      <form
+        class="relative w-full max-w-sm rounded-xl bg-white p-6 shadow-lg"
+        id="formularioEstudianteContent"
+      >
+        <p
+          id="cerrarModal"
+          class="absolute top-2 right-2 cursor-pointer rounded-full bg-gray-200 px-3 py-1 text-sm hover:bg-gray-300"
+        >
+          Cerrar
+        </p>
+        <div class="mb-5">
+          <label for="nombre" class="mb-2 block text-sm font-medium text-gray-900">Nombre</label>
+          <input
+            type="text"
+            id="nombre"
+            class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-xs"
+            required
+          />
+        </div>
+        <div class="mb-5">
+          <label for="edad" class="mb-2 block text-sm font-medium text-gray-900">Edad</label>
+          <input
+            type="text"
+            id="edad"
+            class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-xs"
+            required
+          />
+        </div>
+        <div class="mb-5">
+          <label for="pais" class="mb-2 block text-sm font-medium text-gray-900">País</label>
+          <input
+            type="text"
+            id="pais"
+            class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-xs"
+            required
+          />
+        </div>
+
+        <button
+          type="submit"
+          class="mt-5 w-full rounded-lg bg-blue-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-blue-800"
+        >
+          Agregar Estudiante
+        </button>
+      </form>
+    </div>
+
+    <!-- TABLA DE ESTUDIANTES -->
+    <div class="flex min-h-screen flex-col items-center justify-center">
+      <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+        <table class="w-full text-left text-sm text-gray-500 rtl:text-right">
+          <thead class="bg-gray-50 text-xs text-gray-700 uppercase dark:bg-gray-700">
+            <tr>
+              <th scope="col" class="px-6 py-3">Estudiante</th>
+              <th scope="col" class="px-6 py-3">Edad</th>
+              <th scope="col" class="px-6 py-3">País</th>
+              <th scope="col" class="px-6 py-3">Acción</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="./dia-16-tarde.js"></script>
+  </body>
+</html>

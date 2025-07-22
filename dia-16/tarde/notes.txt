@@ -1,0 +1,2 @@
+Estudiar events de: change, keydown, keyup, mouseover, mouseout.
+También estudiar atributo event o (e)
