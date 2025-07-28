@@ -1,0 +1,5 @@
+Este día trabajamos en un proyecto en equipo el cual lo puse en la carpeta:
+C:\Users\Benja\OneDrive\Escritorio\Programming\Front-end Study\FUNVAL - Front-end\dia-15-modulo-uno
+Ahí está todo el trabajo que hice ese día junto con mis compañeros.
+Por qué lo saqué de aquí? Porque ese proyecto lo tenía giteado con el proyecto de mis compañeros
+y me estaba dando conflictos para guardar los proyectos hecho dentro de FUNVAL.
