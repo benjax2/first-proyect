@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Benjamín Rodríguez | Mis Proyectos</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body class="bg-[#0D1117] font-sans text-white">
+    <header
+      class="fixed top-0 z-50 flex w-full items-center justify-between bg-[#0D1117] px-6 py-4 shadow-md"
+    >
+      <div class="text-xl font-bold text-white">Benjamín Rodríguez</div>
+      <nav class="hidden space-x-6 md:flex">
+        <a href="#about" class="text-white transition-colors duration-300 hover:text-[#E3FF6A]"
+          >ABOUT ME</a
+        >
+        <a href="#skills" class="text-white transition-colors duration-300 hover:text-[#E3FF6A]"
+          >SKILLS</a
+        >
+        <a href="#projects" class="text-white transition-colors duration-300 hover:text-[#E3FF6A]"
+          >PROJECTS</a
+        >
+      </nav>
+      <a
+        href="#contact"
+        class="ml-2 rounded bg-[#E3FF6A] px-4 py-2 font-semibold text-[#0D1117] transition-all duration-300 ease-in-out hover:bg-[#cbe35e] hover:shadow-[0_0_25px_rgba(227,255,106,0.6)]"
+        >CONTACT</a
+      >
+
+      <button id="mobile-menu-button" class="ml-2 text-white focus:outline-none md:hidden">
+        <svg
+          class="h-6 w-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7"
+          ></path>
+        </svg>
+      </button>
+    </header>
+
+    <!-- TOGGLE MENU -->
+    <div
+      id="mobile-menu"
+      class="fixed top-16 left-0 z-40 hidden w-full bg-[#0D1117] py-4 text-center shadow-lg md:hidden"
+    >
+      <nav class="flex flex-col space-y-4">
+        <a
+          href="#about"
+          class="block py-2 text-white transition-colors duration-300 hover:text-[#E3FF6A]"
+          >ABOUT ME</a
+        >
+        <a
+          href="#skills"
+          class="block py-2 text-white transition-colors duration-300 hover:text-[#E3FF6A]"
+          >SKILLS</a
+        >
+        <a
+          href="#projects"
+          class="block py-2 text-white transition-colors duration-300 hover:text-[#E3FF6A]"
+          >PROJECTS</a
+        >
+        <a
+          href="#contact"
+          class="block py-2 text-white transition-colors duration-300 hover:text-[#E3FF6A]"
+          >CONTACT</a
+        >
+      </nav>
+    </div>
+
+    <section class="bg-[#1E293B] px-6 py-20 pt-32 text-center">
+      <h1 class="mb-12 text-3xl font-bold md:text-5xl">MY PROJECTS</h1>
+      <div
+        id="projects-container"
+        class="mx-auto grid max-w-6xl grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3"
+      ></div>
+      <div class="mt-12">
+        <a
+          href="./index.html"
+          class="mt-15 inline-block transform rounded bg-[#E3FF6A] px-6 py-2 font-bold text-[#0D1117] transition-all duration-300 ease-in-out hover:scale-105 hover:bg-[#cbe35e] hover:shadow-[0_0_25px_rgba(227,255,106,0.6)]"
+          >Go Back</a
+        >
+      </div>
+    </section>
+
+    <footer class="bg-[#0D1117] py-6 text-center text-sm text-[#8892B0]">
+      <p>&copy; 2025 Benjamín Rodríguez. All rights reserved.</p>
+    </footer>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

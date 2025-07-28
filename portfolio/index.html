@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Benjamín Rodríguez | Front-end Developer Portfolio</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body class="bg-[#0D1117] font-sans text-white">
+    <header
+      class="fixed top-0 z-50 flex w-full items-center justify-between bg-[#0D1117] px-6 py-4 shadow-md"
+    >
+      <div class="text-xl font-bold text-white">Benjamín Rodríguez</div>
+      <nav class="hidden space-x-6 md:flex">
+        <a href="#about" class="text-white transition-colors duration-300 hover:text-[#E3FF6A]"
+          >ABOUT ME</a
+        >
+        <a href="#skills" class="text-white transition-colors duration-300 hover:text-[#E3FF6A]"
+          >SKILLS</a
+        >
+        <a href="#projects" class="text-white transition-colors duration-300 hover:text-[#E3FF6A]"
+          >PROJECTS</a
+        >
+      </nav>
+      <a
+        href="#contact"
+        class="ml-2 rounded bg-[#E3FF6A] px-4 py-2 font-semibold text-[#0D1117] transition-all duration-300 ease-in-out hover:bg-[#cbe35e] hover:shadow-[0_0_25px_rgba(227,255,106,0.6)]"
+        >CONTACT</a
+      >
+
+      <button id="mobile-menu-button" class="ml-2 text-white focus:outline-none md:hidden">
+        <svg
+          class="h-6 w-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7"
+          ></path>
+        </svg>
+      </button>
+    </header>
+
+    <!-- TOGGLE MENU -->
+    <div
+      id="mobile-menu"
+      class="fixed top-16 left-0 z-40 hidden w-full bg-[#0D1117] py-4 text-center shadow-lg md:hidden"
+    >
+      <nav class="flex flex-col space-y-4">
+        <a
+          href="#about"
+          class="block py-2 text-white transition-colors duration-300 hover:text-[#E3FF6A]"
+          >ABOUT ME</a
+        >
+        <a
+          href="#skills"
+          class="block py-2 text-white transition-colors duration-300 hover:text-[#E3FF6A]"
+          >SKILLS</a
+        >
+        <a
+          href="#projects"
+          class="block py-2 text-white transition-colors duration-300 hover:text-[#E3FF6A]"
+          >PROJECTS</a
+        >
+        <a
+          href="#contact"
+          class="block py-2 text-white transition-colors duration-300 hover:text-[#E3FF6A]"
+          >CONTACT</a
+        >
+      </nav>
+    </div>
+
+    <!-- PRESENTATION -->
+    <section class="bg-gradient-to-br from-[#1E293B] to-[#0D1117] pt-32 pb-20 text-center">
+      <h1 class="text-3xl font-bold md:text-5xl">
+        I'm <span class="text-[#be36ac]">Benjamín Rodríguez</span><br />
+        Front-end Developer
+      </h1>
+      <img
+        src="./assets/img/me.jpg"
+        alt="Benjamín Rodríguez Profile Photo"
+        class="mx-auto mt-12 h-48 w-48 rounded-full border-4 border-[#be36ac] object-cover shadow-xl md:h-64 md:w-64"
+      />
+      <a
+        href="#projects"
+        class="mt-15 inline-block transform rounded bg-[#E3FF6A] px-6 py-2 font-bold text-[#0D1117] transition-all duration-300 ease-in-out hover:scale-105 hover:bg-[#cbe35e] hover:shadow-[0_0_25px_rgba(227,255,106,0.6)]"
+        >MY PROJECTS</a
+      >
+    </section>
+
+    <!-- ABOUT ME -->
+    <section id="about" class="px-6 py-20 text-center">
+      <h2 class="mb-6 text-4xl font-bold">WHO AM I?</h2>
+      <p class="mx-auto max-w-4xl text-lg leading-relaxed text-[#8892B0] md:text-xl">
+        <span class="text-2xl font-bold text-[#E3FF6A]">Hi!</span> I'm Benjamín, a 22 year-old
+        front-end web developer from Montevideo, Uruguay. I'm passionate about crafting intuitive
+        and visually engaging user experiences. My expertise lies in HTML, CSS, Tailwind CSS, and
+        JavaScript. I also have a solid foundation in back-end development, with experience using
+        PHP and MySQL &#40;skills I developed during my training at FUNVAL&#41;. <br />
+        <br />
+        My curiosity extends beyond coding. In my free time, I dive into the world of music
+        production using tools like Ableton Live and FL Studio. I'm equally passionate about video
+        editing and graphic design, working with Adobe Premiere Pro and Photoshop. I also enjoy
+        immersing myself in video games and getting lost in a good book.
+      </p>
+      <a
+        href="#projects"
+        class="mt-10 inline-block transform rounded bg-[#E3FF6A] px-6 py-2 font-bold text-[#0D1117] transition-all duration-300 ease-in-out hover:scale-105 hover:bg-[#cbe35e] hover:shadow-[0_0_25px_rgba(227,255,106,0.6)]"
+        >VIEW MY PROJECTS</a
+      >
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="bg-[#1E293B] px-6 py-20 text-center">
+      <h2 class="mb-12 text-3xl font-bold">MY SKILLS</h2>
+      <div
+        id="main-skills-container"
+        class="mx-auto mb-12 grid max-w-6xl grid-cols-3 gap-8 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6"
+      ></div>
+      <p class="mb-8 pt-15 text-xl font-semibold text-[#A4FF7A]">
+        Ready for my first professional opportunity!
+      </p>
+      <a
+        href="./assets/documents/Luan Rodríguez CV.pdf"
+        download="Luan Rodríguez CV.pdf"
+        class="mt-4 inline-block transform rounded bg-[#E3FF6A] px-6 py-3 font-bold text-[#0D1117] transition-all duration-300 ease-in-out hover:scale-105 hover:bg-[#cbe35e] hover:shadow-[0_0_25px_rgba(227,255,106,0.6)]"
+        >DOWNLOAD MY CV</a
+      >
+    </section>
+
+    <!-- ADDITIONAL SKILLS -->
+    <section class="bg-[#0D1117] px-6 py-10 text-center text-white">
+      <h3 class="mb-8 text-3xl font-bold text-[#E3FF6A] md:text-4xl">Additional Skills</h3>
+      <div class="mx-auto max-w-5xl">
+        <ul
+          id="additional-skills-container"
+          class="grid grid-cols-2 justify-items-center gap-x-6 gap-y-8 sm:gap-x-8 sm:gap-y-10 md:grid-cols-3 lg:grid-cols-4"
+        ></ul>
+      </div>
+    </section>
+
+    <!-- MY PROJECTS -->
+    <section id="projects" class="bg-[#1E293B] px-6 py-20 text-center">
+      <h2 class="mb-12 text-3xl font-bold">MY PROJECTS</h2>
+      <div
+        id="projects-container"
+        class="mx-auto grid max-w-6xl grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3"
+      ></div>
+      <div class="mt-12">
+        <a
+          href="./proyectos.html"
+          class="mt-15 inline-block transform rounded bg-[#E3FF6A] px-6 py-2 font-bold text-[#0D1117] transition-all duration-300 ease-in-out hover:scale-105 hover:bg-[#cbe35e] hover:shadow-[0_0_25px_rgba(227,255,106,0.6)]"
+          >See More</a
+        >
+      </div>
+    </section>
+
+    <!-- FORM -->
+    <section id="contact" class="bg-[#0D1117] px-6 py-20 text-center">
+      <h2 class="mb-12 text-3xl font-bold">LET'S TALK A BIT</h2>
+      <form id="contact-form" class="mx-auto max-w-xl space-y-6" action="#" method="POST">
+        <input
+          id="name"
+          type="text"
+          placeholder="YOUR NAME"
+          name="name"
+          class="w-full rounded-lg bg-[#1E293B] px-5 py-3 text-white placeholder-[#8892B0] focus:ring-2 focus:ring-[#E3FF6A] focus:outline-none"
+        />
+        <input
+          id="email"
+          type="email"
+          placeholder="EMAIL ADDRESS"
+          name="email"
+          class="w-full rounded-lg bg-[#1E293B] px-5 py-3 text-white placeholder-[#8892B0] focus:ring-2 focus:ring-[#E3FF6A] focus:outline-none"
+        />
+        <input
+          id="phone"
+          type="tel"
+          placeholder="PHONE NUMBER"
+          name="phone"
+          class="w-full rounded-lg bg-[#1E293B] px-5 py-3 text-white placeholder-[#8892B0] focus:ring-2 focus:ring-[#E3FF6A] focus:outline-none"
+        />
+        <textarea
+          rows="6"
+          placeholder="WRITE YOUR MESSAGE HERE..."
+          name="message"
+          class="w-full rounded-lg bg-[#1E293B] px-5 py-3 text-white placeholder-[#8892B0] focus:ring-2 focus:ring-[#E3FF6A] focus:outline-none"
+        ></textarea>
+        <button
+          type="submit"
+          class="w-full rounded-lg bg-[#E3FF6A] py-3 text-lg font-bold text-[#0D1117] transition-all duration-300 ease-in-out hover:bg-[#cbe35e] hover:shadow-[0_0_25px_rgba(227,255,106,0.6)]"
+        >
+          SEND MESSAGE
+        </button>
+      </form>
+      <div id="form-message" class="mt-4 text-center text-white"></div>
+
+      <div class="mt-12 text-lg text-[#8892B0]">
+        You can also find me on:
+        <div class="mt-4 flex justify-center space-x-6">
+          <a
+            href="https://github.com/benjax2"
+            target="_blank"
+            class="text-white transition-colors duration-300 hover:text-[#E3FF6A]"
+          >
+            <img
+              src="https://img.icons8.com/ios-filled/50/ffffff/github.png"
+              alt="GitHub"
+              class="mx-auto h-8 w-8"
+            />
+            GitHub
+          </a>
+          <a
+            href="https://www.linkedin.com/in/luan-rodr%C3%ADguez-3a075930a/"
+            target="_blank"
+            class="text-white transition-colors duration-300 hover:text-[#E3FF6A]"
+          >
+            <img
+              src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png"
+              alt="LinkedIn"
+              class="mx-auto h-8 w-8"
+            />
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-[#0D1117] py-6 text-center text-sm text-[#8892B0]">
+      <p>&copy; 2025 Benjamín Rodríguez. All rights reserved.</p>
+    </footer>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
