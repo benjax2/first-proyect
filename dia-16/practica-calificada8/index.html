@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Práctica Calificada 8</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body
+    class="font-['Lobster', sans-serif] flex min-h-screen items-center justify-center bg-[#192a33] text-white"
+  >
+    <div class="mx-auto w-full max-w-md space-y-4">
+      <div class="relative flex items-center justify-between px-6">
+        <div class="z-10 flex space-x-2 text-3xl">
+          <span class="font-bold text-cyan-400">X</span>
+          <span class="font-bold text-yellow-400">O</span>
+        </div>
+
+        <p
+          class="absolute left-1/2 -translate-x-1/2 rounded-lg bg-[#21262D] px-5 py-2 text-base font-bold text-white shadow-inner"
+        >
+          <span class="text-cyan-400">X</span> TURN
+        </p>
+
+        <button
+          class="z-10 rounded-md bg-[#A8BEC8] p-2 text-black transition-colors duration-200 hover:bg-gray-300"
+        >
+          <img src="./img/actualizar.svg" alt="actualizar" class="h-5 w-5" />
+        </button>
+      </div>
+
+      <div class="grid grid-cols-3 gap-4 px-4">
+        <div
+          class="flex aspect-square items-center justify-center rounded-lg bg-[#1f3441] text-5xl font-bold shadow-lg"
+        ></div>
+        <div
+          class="flex aspect-square items-center justify-center rounded-lg bg-[#1f3441] text-5xl font-bold shadow-lg"
+        ></div>
+        <div
+          class="flex aspect-square items-center justify-center rounded-lg bg-[#1f3441] text-5xl font-bold shadow-lg"
+        ></div>
+        <div
+          class="flex aspect-square items-center justify-center rounded-lg bg-[#1f3441] text-5xl font-bold shadow-lg"
+        ></div>
+        <div
+          class="flex aspect-square items-center justify-center rounded-lg bg-[#1f3441] text-5xl font-bold shadow-lg"
+        ></div>
+        <div
+          class="flex aspect-square items-center justify-center rounded-lg bg-[#1f3441] text-5xl font-bold shadow-lg"
+        ></div>
+        <div
+          class="flex aspect-square items-center justify-center rounded-lg bg-[#1f3441] text-5xl font-bold shadow-lg"
+        ></div>
+        <div
+          class="flex aspect-square items-center justify-center rounded-lg bg-[#1f3441] text-5xl font-bold shadow-lg"
+        ></div>
+        <div
+          class="flex aspect-square items-center justify-center rounded-lg bg-[#1f3441] text-5xl font-bold shadow-lg"
+        ></div>
+      </div>
+
+      <div class="grid grid-cols-3 gap-4 px-4 text-sm font-bold">
+        <div class="rounded-lg bg-[#30c4bf] py-2 text-center text-black shadow">
+          X (YOU)<br /><span class="text-lg font-bold">0</span>
+        </div>
+        <div class="rounded-lg bg-[#a8bec8] py-2 text-center text-black shadow">
+          TIES<br /><span class="text-lg font-bold">0</span>
+        </div>
+        <div class="rounded-lg bg-[#f2b336] py-2 text-center text-black shadow">
+          O (CPU)<br /><span class="text-lg font-bold">0</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

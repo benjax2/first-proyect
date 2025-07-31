@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body
+    class="flex min-h-screen items-center justify-center bg-[#192a33] px-4 font-sans text-white"
+  >
+    <!-- Pantalla de inicio -->
+    <div id="start-screen" class="flex flex-col items-center space-y-6">
+      <div class="flex space-x-2 text-3xl">
+        <span class="font-bold text-[#30c4bf]">X</span>
+        <span class="font-bold text-[#f2b336]">O</span>
+      </div>
+      <h1 class="text-xl font-bold">CHOOSE GAME MODE</h1>
+      <div class="w-64 space-y-4">
+        <button
+          id="vs-player-btn"
+          class="w-full rounded-lg bg-[#a8bec9] py-2 font-bold text-[#213139] hover:bg-gray-300"
+        >
+          VS PLAYER
+        </button>
+        <button
+          id="vs-cpu-btn"
+          class="w-full rounded-lg bg-[#f2b336] py-2 font-bold text-[#323832] hover:bg-[#ffc666]"
+        >
+          VS CPU
+        </button>
+      </div>
+    </div>
+
+    <!-- Tablero principal -->
+    <div id="game-container" class="hidden w-full max-w-md space-y-4">
+      <!-- Encabezado -->
+      <div class="relative flex items-center justify-between px-6">
+        <div class="z-10 flex space-x-2 text-3xl">
+          <span class="font-bold text-[#30c4bf]">X</span>
+          <span class="font-bold text-[#f2b336]">O</span>
+        </div>
+        <p
+          id="turn-indicator"
+          class="absolute left-1/2 -translate-x-1/2 rounded-lg bg-[#21262D] px-5 py-2 text-base font-bold shadow-inner transition-all duration-300"
+        >
+          <span id="current-player-icon" class="text-[#30c4bf]">X</span> TURN
+        </p>
+        <button
+          id="restart-button"
+          class="z-10 rounded-md bg-[#A8BEC8] p-2 text-black transition-colors duration-200 hover:bg-gray-300"
+          title="Restart Game"
+        >
+          <img src="./img/actualizar.svg" alt="restart" class="h-5 w-5" />
+        </button>
+      </div>
+
+      <!-- Tablero -->
+      <div id="game-board" class="grid grid-cols-3 gap-4 px-4">
+        <!-- Celdas 0 al 8 -->
+        <div
+          class="cell flex aspect-square cursor-pointer items-center justify-center rounded-lg bg-[#1f3441] text-5xl font-bold shadow-lg select-none"
+          data-cell-index="0"
+        ></div>
+        <div
+          class="cell flex aspect-square cursor-pointer items-center justify-center rounded-lg bg-[#1f3441] text-5xl font-bold shadow-lg select-none"
+          data-cell-index="1"
+        ></div>
+        <div
+          class="cell flex aspect-square cursor-pointer items-center justify-center rounded-lg bg-[#1f3441] text-5xl font-bold shadow-lg select-none"
+          data-cell-index="2"
+        ></div>
+        <div
+          class="cell flex aspect-square cursor-pointer items-center justify-center rounded-lg bg-[#1f3441] text-5xl font-bold shadow-lg select-none"
+          data-cell-index="3"
+        ></div>
+        <div
+          class="cell flex aspect-square cursor-pointer items-center justify-center rounded-lg bg-[#1f3441] text-5xl font-bold shadow-lg select-none"
+          data-cell-index="4"
+        ></div>
+        <div
+          class="cell flex aspect-square cursor-pointer items-center justify-center rounded-lg bg-[#1f3441] text-5xl font-bold shadow-lg select-none"
+          data-cell-index="5"
+        ></div>
+        <div
+          class="cell flex aspect-square cursor-pointer items-center justify-center rounded-lg bg-[#1f3441] text-5xl font-bold shadow-lg select-none"
+          data-cell-index="6"
+        ></div>
+        <div
+          class="cell flex aspect-square cursor-pointer items-center justify-center rounded-lg bg-[#1f3441] text-5xl font-bold shadow-lg select-none"
+          data-cell-index="7"
+        ></div>
+        <div
+          class="cell flex aspect-square cursor-pointer items-center justify-center rounded-lg bg-[#1f3441] text-5xl font-bold shadow-lg select-none"
+          data-cell-index="8"
+        ></div>
+      </div>
+
+      <!-- Marcadores -->
+      <div class="grid grid-cols-3 gap-4 px-4 text-sm font-bold">
+        <div class="rounded-lg bg-[#30c4bf] py-2 text-center text-black shadow">
+          X (YOU)<br /><span id="x-score" class="text-lg font-bold">0</span>
+        </div>
+        <div class="rounded-lg bg-[#a8bec8] py-2 text-center text-black shadow">
+          TIES<br /><span id="ties-score" class="text-lg font-bold">0</span>
+        </div>
+        <div class="rounded-lg bg-[#f2b336] py-2 text-center text-black shadow">
+          O (<span id="opponent-label">CPU</span>)<br /><span id="o-score" class="text-lg font-bold"
+            >0</span
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal de resultado -->
+    <div
+      id="modal-overlay"
+      class="bg-opacity-70 fixed inset-0 z-50 hidden items-center justify-center bg-black"
+    >
+      <div
+        class="mx-auto w-full max-w-sm space-y-4 rounded-lg bg-[#2a3c46] p-8 text-center text-white"
+      >
+        <p id="result-subtext" class="text-sm font-semibold tracking-wide text-gray-300"></p>
+        <div class="flex items-center justify-center">
+          <span id="result-icon" class="text-6xl font-bold"></span>
+        </div>
+        <h2 id="result-text" class="text-2xl font-extrabold tracking-wide"></h2>
+        <div class="mt-4 flex justify-center space-x-4">
+          <button
+            id="quit-button"
+            class="rounded-md bg-[#a9bec9] px-4 py-2 font-bold text-black hover:bg-gray-300"
+          >
+            QUIT
+          </button>
+          <button
+            id="next-round-button"
+            class="rounded-md bg-[#f3b337] px-4 py-2 font-bold text-black hover:bg-[#ffc666]"
+          >
+            NEXT ROUND
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
