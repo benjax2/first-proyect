@@ -1,0 +1,6 @@
+========= NOTAS PARA PROYECTO FINAL =========
+los usuarios solo se pueden registrar como comprador.
+Solo un admin puede crear otro admin.
+Dónde se guarda el token? En las cookies del navegador. Averiguar cómo hacerlo.
+
+Los compradores y admins tienen accesos diferentes, o sea, según lo que sean, verán cosas diferentes.
